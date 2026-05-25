@@ -1,0 +1,8 @@
+services:
+  jupyter:
+    build: .
+    ports:
+      - "8888:8888"
+    container_name: my_jupyter_container
+    volumes:
+      - .:/workspace
